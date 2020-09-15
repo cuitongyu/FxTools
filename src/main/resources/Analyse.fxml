@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="130.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yzb.ewsq.controller.AnalyseController">
+   <children>
+      <Label layoutX="30.0" layoutY="30.0" text="数据源">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtResources" layoutX="82.0" layoutY="28.0" prefHeight="23.0" prefWidth="250.0" />
+      <Button styleClass="fat-button" layoutX="332.0" layoutY="28.0" mnemonicParsing="false" text="···" onAction="#btnSelectPath_OnClick_Event"/>
+      <Button styleClass="fat-button" layoutX="169.0" layoutY="75.0" mnemonicParsing="false" text="开始分析" onAction="#btnBeginAnalyse_OnClick_Event">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

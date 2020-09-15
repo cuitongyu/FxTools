@@ -1,0 +1,50 @@
+#btnBTC {
+    -fx-font-size: 14px;
+    -fx-font-weight: bolder;
+}
+
+/*.button {*/
+/*-fx-font-size: 14px;*/
+/*}*/
+
+.tab-pane {
+    -fx-background-color: #b3fbc4;
+}
+
+.title-label {
+    -fx-background-color: darkseagreen;
+    -fx-text-fill: white;
+}
+
+.button {
+    -fx-padding: 10 15 10 15;
+    -fx-min-width: 100;
+    /*-fx-base: rgba(145, 245, 0, 0.28);*/
+    -fx-base: rgba(0, 0, 0, 0.1);
+}
+
+.fat-button {
+    -fx-base: rgba(0, 0, 0, 0.1);
+    -fx-text-fill: white;
+}
+
+
+.fat-button:default {
+    -fx-base: rgba(0, 255, 231, 0.24);
+    -fx-text-fill: white;
+}
+
+.fat-button:cancel {
+    -fx-background-color: lightgray, white;
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 3;
+    -fx-text-fill: black;
+}
+
+.fat-button:cancel:hover {
+    -fx-base: white;
+    -fx-background-insets: -1, 0, 1, 2;
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-radius: 3;
+    -fx-text-fill: black;
+}

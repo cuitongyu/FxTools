@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fx.tool.controller.MainController">
+    <children>
+        <TextField fx:id="txtResources" disable="true" layoutX="87.0" layoutY="211.0" prefHeight="23.0" prefWidth="329.0" />
+        <TextField fx:id="tCoinName" layoutX="87.0" layoutY="17.0" prefHeight="23.0" prefWidth="329.0" />
+        <TextField fx:id="tPath" layoutX="87.0" layoutY="156.0" prefHeight="23.0" prefWidth="329.0" />
+        <Button layoutX="432.0" layoutY="211.0" onAction="#btnSelectPath_OnClick_Event" styleClass="fat-button" text="选择文件" />
+        <Button layoutX="23.0" layoutY="293.0" onAction="#btnBeginAnalyse_OnClick_Event" styleClass="fat-button" text="生成SQL" />
+        <Label fx:id="lyResult" layoutX="92.0" layoutY="297.0" text="结果:" />
+        <Label layoutX="25.0" layoutY="160.0" text="结果路径" />
+        <Label layoutX="25.0" layoutY="21.0" text="币种名称" />
+        <RadioButton fx:id="rbNeedValid" layoutX="82.0" layoutY="257.0" mnemonicParsing="false" text="需要地址加密" />
+      <Label layoutX="25.0" layoutY="64.0" text="地址路径" />
+      <TextField fx:id="aPath" disable="true" layoutX="87.0" layoutY="60.0" prefHeight="23.0" prefWidth="329.0" />
+      <Button layoutX="432.0" layoutY="60.0" onAction="#btnSelectAddressPath_OnClick_Event" text="选择路径" />
+      <Button layoutX="22.0" layoutY="107.0" onAction="#btnGetAddress_OnClick_Event" text="生成地址" />
+      <Label fx:id="addressResult" layoutX="92.0" layoutY="111.0" text="结果:" />
+      <Label layoutX="25.0" layoutY="215.0" text="文件路径" />
+    </children>
+</AnchorPane>
