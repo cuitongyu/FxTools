@@ -12,7 +12,7 @@ public class ToolApplication extends Application {
     public static void main(String[] args) {
         SpringApplication.run(ToolApplication.class, args);
         launch(args);
-        System.out.println("ce");
+        System.out.println("asd");
     }
 
     /**
